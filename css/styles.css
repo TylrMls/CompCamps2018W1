@@ -1,5 +1,29 @@
 .center {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
+}
+
+.text {
+  color: red;
+  font-family: 'Dosis', sans-serif;
+}
+
+.nav {
+  background-color: black;
+}
+
+.nav-item {
+  display: inline;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.nav-link:hover {
+  color: red;
 }
