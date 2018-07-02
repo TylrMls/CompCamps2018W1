@@ -4,26 +4,43 @@
   text-align: center;
 }
 
+img {
+  border-radius: 50%;
+  margin-top: 100px;
+  width: 300px;
+}
+
 .text {
   color: red;
   font-family: 'Dosis', sans-serif;
 }
 
+.whitetext {
+  color: white;
+}
+
 .nav {
-  background-color: black;
+  text-align: center;
+  background-color: grey;
+  padding: 2px
 }
 
 .nav-item {
   display: inline;
   font-size: 20px;
-  padding: 10px;
+  padding: 10px
 }
 
 .nav-link {
+  color: white;
+  padding: 10%;
   text-decoration: none;
-  color: lightgrey;
 }
 
 .nav-link:hover {
   color: red;
+}
+
+.webpage {
+  background-color: black;
 }
