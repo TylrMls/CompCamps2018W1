@@ -4,7 +4,11 @@
   text-align: center;
 }
 
-img {
+body {
+  margin: 0;
+}
+
+.img {
   border-radius: 50%;
   margin-top: 100px;
   width: 300px;
@@ -16,31 +20,41 @@ img {
 }
 
 .whitetext {
-  color: white;
+  color: #7F1A0B;
 }
 
 .nav {
+  background-color: #BF2811;
+  display: inline-block;
+  padding-bottom: 2px;
+  padding-top: 2px;
   text-align: center;
-  background-color: grey;
-  padding: 2px
+  width: 100%;
+}
+
+.tylersface {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-name: tylerface;
+  -webkit-animation-name: tylerface;
 }
 
 .nav-item {
   display: inline;
   font-size: 20px;
-  padding: 10px
+
 }
 
 .nav-link {
-  color: white;
+  color: #000000;
   padding: 10%;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  color: red;
+  color: grey;
 }
 
 .webpage {
-  background-color: black;
+  background-color: #F6F6F6;
 }
