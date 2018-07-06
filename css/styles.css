@@ -51,7 +51,8 @@ body {
 
 .nav-link {
   color: #000000;
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
   text-decoration: none;
 }
 
