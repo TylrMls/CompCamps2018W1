@@ -4,34 +4,7 @@
     <meta charset="utf-8">
     <title>Tyler's CompCamp Website!</title>
     <link rel="stylesheet" href="css/styles.css"/>
-    <link src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("div.center").css("display", "none");
-      });
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-
-        $("div.center").css("display", "none");
-
-        $("div.center").fadeIn(500);
-
-        $("a.transition").click(function(event){
-          event.preventDefault();
-          linkLocation = this.href;
-          if (linkLocation == window.location) {
-
-          } else {
-            $("div.center").fadeOut(500, redirectPage);
-          }
-        });
-        function redirectPage() {
-          window.location = linkLocation;
-        }
-      });
-    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   </head>
   <body class="webpage">
     <div id="navi" class="nav">
@@ -51,9 +24,34 @@
       </p>
     </div>
     <div class="socialIcons center">
-        <a href="https://github.com/TylrMls" style="margin: 20px 30px 20px 30px;"><i class="fa fa-github fa-5x a"></i></a>
-        <a href="http://steamcommunity.com/profiles/76561198148649357" style="margin: 20px 30px 20px 30px;"><i class="fa fa-steam fa-5x a"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100010287275873" style="margin: 20px 30px 20px 30px;"><i class="fa fa-facebook fa-5x a"></i></a>
-      </div>
+      <a href="https://github.com/TylrMls" style="margin: 20px 30px 20px 30px;"><i class="fab fa-github fa-5x a"></i></a>
+      <a href="http://steamcommunity.com/profiles/76561198148649357" style="margin: 20px 30px 20px 30px;"><i class="fab fa-steam fa-5x a"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100010287275873" style="margin: 20px 30px 20px 30px;"><i class="fab fa-facebook fa-5x a"></i></a>
+    </div>
+    <script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("div.center").css("display", "none");
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $("div.center").css("display", "none");
+
+        $("div.center").fadeIn(500);
+
+        $("a.transition").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          if (linkLocation != window.location) {
+            $("div.center").fadeOut(500, redirectPage);
+          }
+        });
+        function redirectPage() {
+          window.location = linkLocation;
+        }
+      });
+    </script>
   </body>
 </html>

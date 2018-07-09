@@ -5,32 +5,6 @@
     <title>Tyler's CompCamp Website!</title>
     <link rel="stylesheet" href="css/styles.css"/>
     <link src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("div.center").css("display", "none");
-      });
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("div.center").css("display", "none");
-
-        $("div.center").fadeIn(500);
-
-        $("a.transition").click(function(event){
-          event.preventDefault();
-          linkLocation = this.href;
-          if (linkLocation == window.location) {
-
-          } else {
-            $("div.center").fadeOut(500, redirectPage);
-          }
-        });
-        function redirectPage() {
-          window.location = linkLocation;
-        }
-      });
-    </script>
   </head>
   <body class="webpage">
     <div id="navi" class="nav">
@@ -49,5 +23,29 @@
       <p class="text">This is the HTML code for the website that you are seeing now.<br /> Because this wasn't my main project, I didn't put nearly as much time into this site as I did into the CampCoin miner.</p>
       <img src="images/html.png" class="projectPictures"/>
     </div>
+    <script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("div.center").css("display", "none");
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("div.center").css("display", "none");
+
+        $("div.center").fadeIn(500);
+
+        $("a.transition").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          if (linkLocation != window.location) {
+            $("div.center").fadeOut(500, redirectPage);
+          }
+        });
+        function redirectPage() {
+          window.location = linkLocation;
+        }
+      });
+    </script>
   </body>
 </html>
