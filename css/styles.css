@@ -1,3 +1,25 @@
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 .center {
   display: block;
   margin: 0 auto;
@@ -27,12 +49,22 @@ body {
   color: #7F1A0B;
 }
 
+.padTop {
+  padding-top: 100px;
+}
+
+.animation {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
 .nav {
   background-color: #BF2811;
   display: inline-block;
   padding-bottom: 2px;
   padding-top: 2px;
+  position: fixed;
   text-align: center;
+  top: 0;
   width: 100%;
 }
 
