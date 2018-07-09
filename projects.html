@@ -30,15 +30,14 @@
     </script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("div.center").css("display", "none");
 
-        $("div.center").fadeIn(500);
+        $("div.center").slideDown(1000);
 
         $("a.transition").click(function(event){
           event.preventDefault();
           linkLocation = this.href;
           if (linkLocation != window.location) {
-            $("div.center").fadeOut(500, redirectPage);
+            $("div.center").slideUp(1000, redirectPage);
           }
         });
         function redirectPage() {
